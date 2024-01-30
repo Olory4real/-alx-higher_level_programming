@@ -1,0 +1,19 @@
+# 3-say_my_name.txt
+# Test case 1: Check type for first name and last name
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("Monsurah", "Ajadi")
+My name is Monsurah Ajadi
+
+# Test case 2: Check type for first name is not str
+>>> say_my_name(5, "Ajadi")
+Traceback (most recent call last):
+  ...
+  ...
+TypeError: first_name must be a string
+
+# Test case 3: Check type for last name is not str
+>>> say_my_name("Monsurah", 5)
+Traceback (most recent call last):
+  ...
+  ...
+TypeError: last_name must be a string
